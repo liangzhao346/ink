@@ -1,0 +1,54 @@
+:root {
+  --ink-900: #07080b;
+  --ink-800: #0c0e13;
+  --ink-700: #12151c;
+  --ink-600: #191d26;
+
+  --gold: #d9b26a;
+  --gold-soft: #b8945a;
+  --gold-bright: #f3dcac;
+  --gold-dim: rgba(217, 178, 106, 0.16);
+
+  --text: #ece9e2;
+  --text-dim: #9aa0ad;
+  --text-faint: #626876;
+
+  --line: rgba(217, 178, 106, 0.18);
+  --line-soft: rgba(255, 255, 255, 0.07);
+
+  --radius: 14px;
+  --font: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft YaHei', 'Segoe UI', Roboto, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--text);
+  background: var(--ink-900);
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: inherit;
+  color: inherit;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+::selection {
+  background: rgba(217, 178, 106, 0.3);
+}
